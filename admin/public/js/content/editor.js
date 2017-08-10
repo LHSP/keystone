@@ -1,3 +1,7 @@
+jQuery(document).ready(function() {
+	// Show cloudinary URLs on editor as thumbnails
+	$('.col-value').each(function(index, element) { if($(element).html().indexOf('cloudinary') >= 0) { $(element).html('<img height="50" src="' + $(element).html() + '" />'); }});
+});
 jQuery(function($) {
 	
 	var refs = $('[data-ks-editable]');
